@@ -201,6 +201,19 @@
                     <section>
                         <h2>Autre</h2>
                     </section>
+                    <section>
+                        <h3>Qu'affiche le code suivant ?</h3>
+
+                        <pre><code data-trim>
+$a = array_fill(0, 4, NULL);
+$a[0]++;
+++$a[1];
+$a[2]--;
+--$a[3];
+var_dump($a);
+                        </code></pre>
+
+                    </section>
 
                     <section>
                         <h3>Quelle méthode native de PHP permet de valider facilement une adresse email ?</h3>
@@ -376,7 +389,7 @@ foreach ($range as $date) {
                     </section>
 
                     <section>
-                        <h3>Quels PSR représente l'autoloading</h3>
+                        <h3>Quels PSR représentent l'autoloading ?</h3>
 
                         <ul>
                             <li>PSR-0</li>
@@ -418,6 +431,36 @@ foreach ($range as $date) {
                 <section>
                     <section>
                         <h2>Autre</h2>
+                    </section>
+
+                    <section>
+                        <h3>Qu'affiche le code suivant ?</h3>
+
+                        <pre><code data-trim>
+$a = array_fill(0, 4, NULL);
+$a[0]++;
+++$a[1];
+$a[2]--;
+--$a[3];
+var_dump($a);
+                        </code></pre>
+
+                        <p><strong>Réponse</strong> :
+                        <pre><code data-trim>
+array(4) {
+  [0]=>
+  int(1)
+  [1]=>
+  int(1)
+  [2]=>
+  NULL
+  [3]=>
+  NULL
+}
+                    </code></pre>
+
+                        </p>
+
                     </section>
 
                     <section>
